@@ -12,8 +12,21 @@
         <h1> Bienvenue sur le site de Lansiau Paul 🦾!</h1>
         <p5><a href="index.html"> ← Retour à l'accueil</a></p5>
         <p6><a href="https://www.epitech.eu/"> ← lieux de stage</a></p6>
-        <p7><a href="https://www.lycee-pasteur.fr/"> ← mon lycée</a></p7>
+        <p7><a href="https://www.lycee-pasteur.fr/">Mon lycée</a></p7>
     </header>
+
+<button class="change-bg-btn" onclick="changerBackground()">Changer le fond</button>
+
+    <script>
+        // Tableau de couleurs possibles
+        const couleurs = ["#330169ac", "ffa500", "#9b59b6", "#e74c3c", "#1abc9c", "#34495e"];
+        
+        function changerBackground() {
+            // Choisir une couleur aléatoire
+            const couleur = couleurs[Math.floor(Math.random() * couleurs.length)];
+            document.body.style.backgroundColor = couleur;
+        }
+    </script>
 
     <main>
 
@@ -31,7 +44,7 @@
     </main>
 
     <footer>
-        <p>© 2026 - Lansiau Paul | Fait avec passion</p>
+        <p8>© 2026 - Lansiau Paul | Fait avec passion</p8>
     </footer>
 ←
     <script src="script.js"></script>

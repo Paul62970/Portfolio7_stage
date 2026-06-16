@@ -1,5 +1,5 @@
 body {
-background-color: #6e00e3ac;
+background-color: #330169ac;
 font-family: Arial, sans-serif;
 }
 
@@ -60,23 +60,83 @@ color: #ffffffac;
 text-align: center;
 }
 
-/* Lien non visité */
-a:link {
-color: red;
+p8 {
+color: #ffffffac;
+text-align: center;
 }
 
-/* Lien visité */
-a:visited {
-color: rgb(246, 246, 246);
+
+p5 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
 }
 
-/* Lien survolé */
-a:hover {
-color: orange;
-text-decoration: underline;
+p5:hover {
+background-color: orange; /* Couleur au survol */
+color: white;
 }
 
-/* Lien actif */
-a:active {
-color: blue;
+p6 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
 }
+
+p6:hover {
+background-color: #ffa500; /* Couleur au survol */
+color: white;
+}
+
+p7 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
+}
+
+p7:hover {
+background-color: orange; /* Couleur au survol */
+color: white;
+}
+
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Couleur initiale */
+    transition: background-color 0.5s ease; /* Animation douce */
+}
+
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Couleur initiale */
+    transition: background-color 0.5s ease; /* Animation douce */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Style du bouton */
+.change-bg-btn {
+    position: fixed; /* Fixe le bouton à un endroit précis */
+    top: 10px;       /* Distance du haut */
+    right: 10px;     /* Distance de la droite */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff; /* Bleu */
+    color: rgb(111, 0, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+}
+
+.change-bg-btn:hover {
+    background-color: orange; /* Bleu plus foncé au survol */
+}
+
