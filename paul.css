@@ -1,173 +1,137 @@
+/* ==========================
+   STYLE GENERAL DU SITE
+========================== */
+
 body {
-background-color: #ad6af5ac;
-font-family: Arial, sans-serif;
+    background-color: #e74c3c; /* Fond rouge */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    transition: 0.5s;
 }
+
+/* ==========================
+   MODE SOMBRE
+========================== */
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* ==========================
+   TITRES
+========================== */
 
 h1 {
-color: #ffffffac;
-text-align: center;
-}
-
-p5 {
-text-align: center;
-}
-
-p6 {
-text-align: center;
-}
-
-p7 {
-text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 h2 {
-color: #ffffffac;
-text-align: center;
-}
-
-p1 {
-color: #000000ac;
-text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 h3 {
-color: #ffffffac;
-text-align: center;
+    font-size: 25px;
 }
 
-p2 {
-color: #000000ac;
-text-align: center;
+/* ==========================
+   CARTES DE TEXTE
+========================== */
+
+.carte {
+    background-color: white;
+    color: black;
+
+    width: 70%;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
-h4 {
-color: #ffffffac;
-text-align: center;
+/* ==========================
+   BOUTONS
+========================== */
+
+.bouton {
+    display: inline-block;
+
+    background-color: white;
+    color: #333;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    transition: 0.3s;
 }
 
-p3 {
-color: #000000ac;
-text-align: center;
+/* Quand la souris passe dessus */
+.bouton:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
 }
 
-h5 {
-color: #ffffffac;
-text-align: center;
+/* ==========================
+   BOUTON SPECIAL
+========================== */
+
+.bouton-page {
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
 }
 
-p4 {
-color: #000000ac;
-text-align: center;
+.bouton-page:hover {
+    background-color: rgb(255, 255, 255);
 }
 
-p8 {
-color: #ffffffac;
-text-align: center;
+/* ==========================
+   IMAGES
+========================== */
+
+.image {
+    width: 300px;
+    border-radius: 10px;
 }
 
-
-p5 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
+/* Image à gauche */
+.gauche {
+    float: left;
+    margin-left: 20px;
 }
 
-p5:hover {
-background-color: orange; /* Couleur au survol */
-color: white;
+/* Image à droite */
+.droite {
+    float: right;
+    margin-right: 20px;
 }
 
-p6 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
+/* Image centrée */
+.centre {
+    display: block;
+    margin: auto;
 }
 
-p6:hover {
-background-color: #ffa500; /* Couleur au survol */
-color: white;
-}
+/* ==========================
+   CONTAINER FLEX
+   Permet de placer les
+   éléments où tu veux
+========================== */
 
-p7 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
-}
-
-p7:hover {
-background-color: orange; /* Couleur au survol */
-color: white;
-}
-
-/* Style général de la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: white; /* Couleur initiale */
-    transition: background-color 0.5s ease; /* Animation douce */
-}
-
-/* Style général de la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: white; /* Couleur initiale */
-    transition: background-color 0.5s ease; /* Animation douce */
-    margin: 0; /* Supprime les marges par défaut */
-}
-
-/* Style du bouton */
-.change-bg-btn {
-    position: fixed; /* Fixe le bouton à un endroit précis */
-    top: 10px;       /* Distance du haut */
-    right: 10px;     /* Distance de la droite */
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffffff; /* Bleu */
-    color: rgb(111, 0, 255);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 1000; /* Toujours au-dessus des autres éléments */
-}
-
-.change-bg-btn:hover {
-    background-color: orange; /* Bleu plus foncé au survol */
-}
-
-p4 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
-}
-
-p1 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
-}
-
-p2 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
-}
-
-p3 {
-background-color: rgb(255, 255, 255); /* Couleur de fond */
-padding: 10px 20px; /* Espacement interne */
-text-decoration: none;
-display: inline-block; /* Pour ressembler à un bouton */
-border-radius: 5px; /* Coins arrondis */
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }

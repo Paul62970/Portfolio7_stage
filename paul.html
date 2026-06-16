@@ -2,51 +2,112 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Lansiau</title>
+    <title>Mon Site</title>
+
     <link rel="stylesheet" href="paul.css">
 </head>
 <body>
 
-    <header>
-        <h1> Bienvenue sur le site de Lansiau Paul 🦾!</h1>
-        <p5><a href="index.html"> ← Retour à l'accueil</a></p5>
-        <p6><a href="https://www.epitech.eu/"> ← lieux de stage</a></p6>
-        <p7><a href="https://www.lycee-pasteur.fr/">Mon lycée</a></p7>
-    </header>
+    <!-- =====================
+         TITRE PRINCIPAL
+    ====================== -->
 
-<button class="change-bg-btn" onclick="changerBackground()">Changer le fond</button>
+    <h1>Bienvenue sur mon site</h1>
+
+    <!-- =====================
+         BOUTONS DE NAVIGATION
+    ====================== -->
+
+    <a href="index.html" class="bouton">Accueil</a>
+
+    <a href="https://www.epitech.eu/ecole-informatique-lille/" class="bouton">
+        Lieux de stage
+    </a>
+
+    <a href="https://www.lycee-pasteur.fr/" class="bouton">
+        Mon lycée
+    </a>
+
+    <!-- =====================
+         BOUTON AUTRE PAGE
+    ====================== -->
+
+    <a href="page2.html" class="bouton bouton-page">
+        Aller vers mon jeux
+    </a>
+
+    <!-- =====================
+         BOUTON MODE SOMBRE
+    ====================== -->
+
+    <button class="bouton" onclick="changerTheme()">
+        🌙 Mode sombre / clair
+    </button>
+
+    <!-- =====================
+         A PROPOS
+    ====================== -->
+
+    <h2>À propos de moi</h2>
+
+    <div class="carte">
+
+        <p>
+            Je m'appelle Paul, j'ai 16 ans. J'ai toujours été passionné par l'informatique, c'est pour cela que je fais mon stage de seconde chez Epitech.
+        </p>
+
+    </div>
+
+    <!-- =====================
+         PASSIONS
+    ====================== -->
+
+    <h2>Mes passions</h2>
+
+    <div class="carte">
+
+        <p>
+            Mais mes passions sont le sport, l'informatique, les jeux vidéo. Je fais du sport 6 jours sur 7, je joue aux jeux tous les soirs et je code beaucoup seul
+        </p>
+
+    </div>
+
+    <!-- =====================
+         IMAGE CENTREE
+    ====================== -->
+
+    <img src="https://th.bing.com/th/id/R.525a00a2c72c9dd915f866009df5b3f9?rik=08Rt8nmjqQylZw&pid=ImgRaw&r=0"
+         class="image centre"
+         alt="Image">
+
+    <!-- =====================
+         PROJETS
+    ====================== -->
+
+    <h2>Mes projets</h2>
+
+    <div class="carte">
+
+        <p>
+            Mes projets sont de faire un bac ST2D et ensuite faire un BTS en Cybersécurité. <br>Par exemple il y a des bts à lens, à Arras ou à Lille
+        </p>
+
+    </div>
+
 
     <script>
-        // Tableau de couleurs possibles
-        const couleurs = ["#330169ac", "ffa500", "#9b59b6", "#e74c3c", "#1abc9c", "#34495e"];
-        
-        function changerBackground() {
-            // Choisir une couleur aléatoire
-            const couleur = couleurs[Math.floor(Math.random() * couleurs.length)];
-            document.body.style.backgroundColor = couleur;
+
+        /* ==========================
+           MODE SOMBRE / CLAIR
+        ========================== */
+
+        function changerTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
         }
+
     </script>
 
-    <main>
-
-        <section>
-        <h2>À propos de moi</h2>
-        <p1>Je m'appelle Paul, j'ai 16 ans. J'ai toujours été passionné par l'informatique, c'est pour cela que je fais mon stage de seconde chez Epitech.</p1>
-        <h3>Mes passions</h3>
-        <p2>Mais mes passions sont le sport, l'informatique, les jeux vidéo. Je fais du sport 6 jours sur 7, je joue aux jeux tous les soirs et je code beaucoup seul </p2>
-        <h4>Mes projets</h4>
-        <p3>Mes projets sont de faire un bac ST2D et ensuite faire un BTS en Cybersécurité. <br>Par exemple il y a des bts à lens, à Arras ou à Lille</br></p3>
-        <h5>Mes attente dans ce stage</h5>
-        <p4>J'ai plusieurs attente dans se stage.<br>Je vousdrais apprendre a regler les problem informatique moi même car ches=z moi je m'aide beaiucoup de l'ia. <br>Je voudrait codé beaucoup de chose pour moi avancé d'avantage dans mon apprentisage pour travailler dans la Cybersécurité</br></br> </p4>
-
-        <img src="https://datascientest.com/wp-content/uploads/2021/04/DALL%C2%B7E-2024-01-23-17.44.21-Creation-dune-illustration-plus-specifique-a-la-cybersecurite-pour-un-article-en-format-16_9.-Limage-doit-evoquer-clairement-la-cybersecurite-avec-.png" width="300" height="200" alt="Description de l'image">    </section>
-    </main>
-
-    <footer>
-        <p8>© 2026 - Lansiau Paul | Fait avec passion</p8>
-    </footer>
-←
-    <script src="script.js"></script>
 </body>
 </html>
