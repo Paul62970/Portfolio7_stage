@@ -1,0 +1,122 @@
+/* ==========================
+   STYLE GENERAL
+========================== */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+
+    color: white;
+}
+
+/* ==========================
+   CARTE PRINCIPALE
+========================== */
+
+header {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    width: 90%;
+    max-width: 500px;
+
+    animation: apparition 1s ease;
+}
+
+/* ==========================
+   TITRE
+========================== */
+
+h1 {
+    margin-top: 0;
+
+    font-size: 2.5em;
+
+    margin-bottom: 30px;
+}
+
+/* ==========================
+   LIENS
+========================== */
+
+header p {
+    margin: 15px 0;
+}
+
+header a {
+    display: block;
+
+    text-decoration: none;
+
+    background-color: white;
+    color: #dd2476;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* Effet au survol */
+header a:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    background-color: #ffe6f1;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================
+   ANIMATION D'APPARITION
+========================== */
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   VERSION TELEPHONE
+========================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    header a {
+        padding: 12px;
+    }
+}
