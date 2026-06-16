@@ -1,5 +1,5 @@
 body {
-background-color: #330169ac;
+background-color: #ad6af5ac;
 font-family: Arial, sans-serif;
 }
 
@@ -26,7 +26,7 @@ text-align: center;
 }
 
 p1 {
-color: #ffffffac;
+color: #000000ac;
 text-align: center;
 }
 
@@ -36,7 +36,7 @@ text-align: center;
 }
 
 p2 {
-color: #ffffffac;
+color: #000000ac;
 text-align: center;
 }
 
@@ -46,7 +46,7 @@ text-align: center;
 }
 
 p3 {
-color: #ffffffac;
+color: #000000ac;
 text-align: center;
 }
 
@@ -56,7 +56,7 @@ text-align: center;
 }
 
 p4 {
-color: #ffffffac;
+color: #000000ac;
 text-align: center;
 }
 
@@ -140,3 +140,34 @@ body {
     background-color: orange; /* Bleu plus foncé au survol */
 }
 
+p4 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
+}
+
+p1 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
+}
+
+p2 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
+}
+
+p3 {
+background-color: rgb(255, 255, 255); /* Couleur de fond */
+padding: 10px 20px; /* Espacement interne */
+text-decoration: none;
+display: inline-block; /* Pour ressembler à un bouton */
+border-radius: 5px; /* Coins arrondis */
+}
