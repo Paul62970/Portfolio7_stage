@@ -1,9 +1,82 @@
 body {
-background-color: #f0f0f0;
+background-color: #6e00e3ac;
 font-family: Arial, sans-serif;
 }
 
 h1 {
-color: #333;
+color: #ffffffac;
 text-align: center;
+}
+
+p5 {
+text-align: center;
+}
+
+p6 {
+text-align: center;
+}
+
+p7 {
+text-align: center;
+}
+
+h2 {
+color: #ffffffac;
+text-align: center;
+}
+
+p1 {
+color: #ffffffac;
+text-align: center;
+}
+
+h3 {
+color: #ffffffac;
+text-align: center;
+}
+
+p2 {
+color: #ffffffac;
+text-align: center;
+}
+
+h4 {
+color: #ffffffac;
+text-align: center;
+}
+
+p3 {
+color: #ffffffac;
+text-align: center;
+}
+
+h5 {
+color: #ffffffac;
+text-align: center;
+}
+
+p4 {
+color: #ffffffac;
+text-align: center;
+}
+
+/* Lien non visité */
+a:link {
+color: red;
+}
+
+/* Lien visité */
+a:visited {
+color: rgb(246, 246, 246);
+}
+
+/* Lien survolé */
+a:hover {
+color: orange;
+text-decoration: underline;
+}
+
+/* Lien actif */
+a:active {
+color: blue;
 }
