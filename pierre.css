@@ -32,11 +32,26 @@ body {
         border-radius: 15px;
 
      box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-/* cela change la couleur des étiquettes "groupe" en mode sombre*/
-
-
-
     }
+
+    .bouton {
+     display: inline-block;
+
+        background-color: hwb(239 73% 6%);
+        color: #333;
+
+        text-decoration: none;
+
+        padding: 12px 20px;
+
+        border-radius: 10px;
+
+        margin: 10px;
+
+        transition: 0.3s;
+    }
+
+
 }
 
 /*change la couleur des mots "sites" en noir*/ 
@@ -100,28 +115,9 @@ h3 {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 
 
-
-
 }
 
-.paragraphe_epitech{
-    background-color: lab(100% 0.01 -0.01);
-    color: black;
 
-    width: 70%;
-    position: relative;
-    left: 10px;
-    
-    margin: 20px auto;
-    padding: 20px;
-
-    border-radius: 15px;
-
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-}
-/* ==========================
-   BOUTONS
-========================== */
 
 .btn_mode_sombre {
     display: inline-block;
@@ -154,7 +150,7 @@ h3 {
 .bouton {
     display: inline-block;
 
-    background-color: white;
+    background-color: lab(88.38% -10.97 35.77);
     color: #333;
 
     text-decoration: none;
