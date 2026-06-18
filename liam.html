@@ -7,18 +7,182 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- =====================
+         BOUTON MODE SOMBRE
+    ====================== -->
+
+    <button class="bouton" onclick="changerTheme()">
+        🌙 Mode sombre / clair
+    </button>
     <head>
   <style>
-    p {
-      color: rgb(25, 3, 80);
-    }
-    middle {
-        justify-content: center;
-    }
+ 
+/* ==========================
+   STYLE GENERAL DU SITE
+========================== */
+
+body {
+    background-color: #92fab3d3; /* Fond rouge */
+    color: rgb(5, 5, 5);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    transition: 0.5s;
+}
+
+/* ==========================
+   MODE SOMBRE
+========================== */
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* ==========================
+   TITRES
+========================== */
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* ==========================
+   CARTES DE TEXTE
+========================== */
+
+.carte {
+    background-color: white;
+    color: black;
+
+    width: 70%;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   BOUTONS
+========================== */
+
+.bouton {
+    display: inline-block;
+
+    background-color: white;
+    color: #333;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    transition: 0.3s;
+}
+
+/* Quand la souris passe dessus */
+.bouton:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   BOUTON SPECIAL
+========================== */
+
+.bouton-page {
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+}
+
+.bouton-page:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
+.image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Image à gauche */
+.gauche {
+    float: left;
+    margin-left: 20px;
+}
+
+/* Image à droite */
+.droite {
+    float: right;
+    margin-right: 20px;
+}
+
+/* Image centrée */
+.centre {
+    display: block;
+    margin: auto;
+}
+
+/* ==========================
+   CONTAINER FLEX
+   Permet de placer les
+   éléments où tu veux
+========================== */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ==========================
+   BOUTON CACHE
+   Petit point discret placé
+   en bas à droite de la page
+========================== */
+
+.bouton-cache {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    border-radius: 50%;
+
+    text-decoration: none;
+}
+
+/* Quand la souris passe dessus */
+.bouton-cache:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
 
   </style>
 </head>
-
     <header>
         <h1> Bienvenue sur le site de Liam !</h1>
         <p><a href="index.html">← Retour à l'accueil</a></p>
@@ -42,7 +206,7 @@
         <p6><a href="https://www.epitech.eu/""> ← lieux de stage</a></p6>
     </header>
     <footer>
-        <p>© 2026 - Liam | Fait avec passion dites ue c'est beau jy ai mit tout mon coeur</p>
+        <p>© 2026 - Liam | Fait avec passion dites que c'est beau jy ai mit tout mon coeur</p>
     </footer>
     <script src="script.js"></script>
 </body>
