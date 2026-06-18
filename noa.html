@@ -3,33 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Portfolio de Noa</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
+
+<button id="themeBtn" class="theme-btn">🌙</button>
 
 <header>
 
-<h1>Portfolio de Noa</h1>
+    <h1>Portfolio de Noa</h1>
 
-<p class="sous-titre">
-Élève de seconde • Passionné de sport et d'informatique
-</p>
+    <p class="sous-titre">
+        Élève de seconde • Passionné de sport et d'informatique
+    </p>
 
-<div class="menu">
-    <a href="#apropos" class="btn">À propos</a>
-    <a href="#competences" class="btn">Compétences</a>
-    <a href="#projets" class="btn">Projets</a>
-    <a href="#contact" class="btn">Contact</a>
-</div>
-
-<button id="themeBtn" class="btn">
-🌙 Mode sombre
-</button>
+    <div class="menu">
+        <a href="#apropos" class="btn">À propos</a>
+        <a href="#projets" class="btn">Projets</a>
+        <a href="#contact" class="btn">Contact</a>
+    </div>
 
 </header>
 
@@ -42,36 +37,21 @@
 <p>
 Bonjour, je m'appelle Noa et j'ai 16 ans.
 
-Je suis actuellement en classe de seconde et je m'intéresse particulièrement à l'informatique et aux nouvelles technologies.
+Je suis actuellement en classe de seconde.
 
-Je pratique plusieurs sports : football, golf, musculation, course à pied, vélo, tennis et natation.
-
-Le sport m'aide à développer ma discipline, ma persévérance et mon esprit d'équipe.
+Je suis passionné par le sport et je pratique notamment le football, le golf, la musculation, la course à pied, le vélo, le tennis et la natation.
 
 J'aime également les jeux vidéo, les films et passer du temps avec mes amis.
 
-Mon objectif est de poursuivre mes études dans le domaine de l'informatique afin de devenir développeur logiciel.
+Je m'intéresse beaucoup à l'informatique et aux nouvelles technologies.
+
+Mon objectif est de poursuivre mes études dans ce domaine afin de devenir développeur logiciel.
 </p>
 
 <img
 class="image-sport"
 src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg"
 alt="Sport">
-
-</section>
-
-<section id="competences">
-
-<h2>Mes compétences</h2>
-
-<div class="competences">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">Python</div>
-    <div class="skill">Informatique</div>
-    <div class="skill">Travail en équipe</div>
-    <div class="skill">Organisation</div>
-</div>
 
 </section>
 
@@ -83,17 +63,17 @@ alt="Sport">
 
 <div class="carte">
 <h3>Portfolio Web</h3>
-<p>Création d'un site personnel en HTML et CSS.</p>
+<p>Création d'un portfolio personnel en HTML et CSS.</p>
 </div>
 
 <div class="carte">
-<h3>Projet Python</h3>
-<p>Développement de programmes pour apprendre la programmation.</p>
+<h3>Programmation</h3>
+<p>Apprentissage du Python et création de petits programmes.</p>
 </div>
 
 <div class="carte">
 <h3>Projet futur</h3>
-<p>Création d'une application ou d'un jeu vidéo.</p>
+<p>Développer un site web ou une application complète.</p>
 </div>
 
 </div>
@@ -125,10 +105,10 @@ bouton.addEventListener("click", () => {
 document.body.classList.toggle("light-mode");
 
 if(document.body.classList.contains("light-mode")){
-    bouton.innerHTML = "☀️ Mode clair";
+    bouton.innerHTML = "☀️";
 }
 else{
-    bouton.innerHTML = "🌙 Mode sombre";
+    bouton.innerHTML = "🌙";
 }
 
 });

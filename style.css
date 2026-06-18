@@ -30,18 +30,18 @@ body{
 
 header{
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
     background:rgba(0,0,0,0.25);
     backdrop-filter:blur(12px);
 }
 
 h1{
     font-size:3rem;
-    text-shadow:0 0 15px cyan;
+    text-shadow:0 0 20px cyan;
 }
 
 .sous-titre{
-    margin-top:10px;
+    margin-top:15px;
     color:#d1d5db;
 }
 
@@ -53,13 +53,17 @@ h1{
     display:inline-block;
     padding:12px 20px;
     margin:8px;
-    color:white;
+
     text-decoration:none;
+    color:white;
+
     border-radius:30px;
+
     background:rgba(255,255,255,0.1);
+
     border:1px solid rgba(255,255,255,0.2);
+
     transition:0.3s;
-    cursor:pointer;
 }
 
 .btn:hover{
@@ -78,6 +82,7 @@ section{
     padding:30px;
 
     background:rgba(255,255,255,0.08);
+
     backdrop-filter:blur(15px);
 
     border-radius:25px;
@@ -102,25 +107,15 @@ p{
 .image-sport{
     display:block;
     margin:30px auto;
+
     width:350px;
     max-width:90%;
+
     border-radius:20px;
+
     border:3px solid cyan;
+
     box-shadow:0 0 25px cyan;
-}
-
-.competences{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-}
-
-.skill{
-    padding:12px 20px;
-    border-radius:30px;
-    background:rgba(0,255,255,0.15);
-    border:1px solid cyan;
 }
 
 .projets{
@@ -131,8 +126,11 @@ p{
 
 .carte{
     padding:20px;
+
     border-radius:20px;
+
     background:rgba(255,255,255,0.05);
+
     transition:0.3s;
 }
 
@@ -153,6 +151,40 @@ footer{
     background:rgba(0,0,0,0.25);
 }
 
+/* Bouton mode sombre / clair */
+
+.theme-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    width:60px;
+    height:60px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    box-shadow:0 0 20px cyan;
+
+    transition:0.3s;
+
+    z-index:999;
+}
+
+.theme-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 30px cyan;
+}
+
 /* MODE CLAIR */
 
 .light-mode{
@@ -171,6 +203,11 @@ footer{
     color:#111827;
 }
 
+.light-mode .btn{
+    color:#111827;
+    background:rgba(255,255,255,0.7);
+}
+
 .light-mode .sous-titre{
     color:#374151;
 }
@@ -179,9 +216,9 @@ footer{
     color:#2563eb;
 }
 
-.light-mode .btn{
+.light-mode .theme-btn{
     color:#111827;
-    background:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,0.8);
 }
 
 @media(max-width:768px){
@@ -190,12 +227,12 @@ h1{
     font-size:2rem;
 }
 
-section{
-    padding:20px;
-}
-
 .image-sport{
     width:100%;
+}
+
+section{
+    padding:20px;
 }
 
 }
