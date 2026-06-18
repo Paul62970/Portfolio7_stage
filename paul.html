@@ -1,116 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Mon Site</title>
 
     <link rel="stylesheet" href="paul.css">
 </head>
+
 <body>
 
-    <!-- =====================
-         TITRE PRINCIPAL
-    ====================== -->
-
     <h1>Bienvenue sur mon site</h1>
-
-    <!-- =====================
-         BOUTONS DE NAVIGATION
-    ====================== -->
 
     <a href="index.html" class="bouton">Accueil</a>
 
     <a href="https://www.epitech.eu/ecole-informatique-lille/" class="bouton">
-        Lieux de stage
+        Lieu de stage
     </a>
 
     <a href="https://www.lycee-pasteur.fr/" class="bouton">
         Mon lycée
     </a>
 
-    <!-- =====================
-         BOUTON MODE SOMBRE
-    ====================== -->
+    <a href="paul2.html" class="bouton">
+        Mon stage
+    </a>
 
     <button class="bouton" onclick="changerTheme()">
         🌙 Mode sombre / clair
     </button>
 
-    <!-- =====================
-         A PROPOS
-    ====================== -->
+    <div class="carte">
 
-    <h2>À propos de moi</h2>
+        <h2>À propos de moi</h2>
+
+        <p>
+            Je m'appelle Paul, j'ai 16 ans. J'ai toujours été passionné par
+            l'informatique, c'est pour cela que je fais mon stage de seconde
+            chez Epitech.
+        </p>
+
+        <img src="https://th.bing.com/th/id/R.525a00a2c72c9dd915f866009df5b3f9?rik=08Rt8nmjqQylZw&pid=ImgRaw&r=0"
+            class="image"
+            alt="Image">
+
+    </div>
 
     <div class="carte">
 
+        <h2>Mes passions</h2>
+
         <p>
-            Je m'appelle Paul, j'ai 16 ans. J'ai toujours été passionné par l'informatique, c'est pour cela que je fais mon stage de seconde chez Epitech.
+            Mes passions sont le sport, l'informatique et les jeux vidéo.
+            Je fais du sport 6 jours sur 7, je joue aux jeux vidéo tous les
+            soirs et je code régulièrement seul pour progresser.
         </p>
 
     </div>
 
-    <!-- =====================
-         PASSIONS
-    ====================== -->
-
-    <h2>Mes passions</h2>
-
     <div class="carte">
 
+        <h2>Mes projets</h2>
+
         <p>
-            Mais mes passions sont le sport, l'informatique, les jeux vidéo. Je fais du sport 6 jours sur 7, je joue aux jeux tous les soirs et je code beaucoup seul
+            Mon objectif est de faire un bac STI2D puis un BTS en cybersécurité.
+            Plusieurs établissements proposent cette formation, notamment à Lens,
+            Arras ou Lille.
         </p>
 
     </div>
-
-    <!-- =====================
-         IMAGE CENTREE
-    ====================== -->
-
-    <img src="https://th.bing.com/th/id/R.525a00a2c72c9dd915f866009df5b3f9?rik=08Rt8nmjqQylZw&pid=ImgRaw&r=0"
-         class="image centre"
-         alt="Image">
-
-    <!-- =====================
-         PROJETS
-    ====================== -->
-
-    <h2>Mes projets</h2>
-
-    <div class="carte">
-
-        <p>
-            Mes projets sont de faire un bac STI2D et ensuite faire un BTS en Cybersécurité. <br>Par exemple il y a des bts à lens, à Arras ou à Lille
-        </p>
-
-    </div>
-
 
     <script>
 
-        /* ==========================
-           MODE SOMBRE / CLAIR
-        ========================== */
-
         function changerTheme() {
-
             document.body.classList.toggle("dark-mode");
-
         }
 
     </script>
-
-        <!-- =====================
-         BOUTON CACHE
-         Ce bouton est presque invisible.
-         Si quelqu'un clique dessus,
-         il est redirigé vers un mème.
-    ====================== -->
 
     <a href="paul.mp3"
        class="bouton-cache"
        title="🤫">
     </a>
+
 </body>
+
 </html>
