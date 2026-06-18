@@ -30,70 +30,129 @@
 
 <main>
 
-<section id="apropos">
+    <!-- Colonne gauche -->
 
-<h2>À propos de moi</h2>
+    <aside class="sidebar">
 
-<p>
-Bonjour, je m'appelle Noa et j'ai 16 ans.
+        <div class="info-card">
+            <h3>🎯 Objectif</h3>
+            <p>
+                Devenir développeur logiciel et travailler dans le domaine de l'informatique.
+            </p>
+        </div>
 
-Je suis actuellement en classe de seconde.
+        <div class="info-card">
+            <h3>📚 Études</h3>
+            <p>
+                Actuellement en classe de seconde avec un fort intérêt pour les nouvelles technologies.
+            </p>
+        </div>
 
-Je suis passionné par le sport et je pratique notamment le football, le golf, la musculation, la course à pied, le vélo, le tennis et la natation.
+    </aside>
 
-J'aime également les jeux vidéo, les films et passer du temps avec mes amis.
+    <!-- Contenu principal -->
 
-Je m'intéresse beaucoup à l'informatique et aux nouvelles technologies.
+    <div class="contenu">
 
-Mon objectif est de poursuivre mes études dans ce domaine afin de devenir développeur logiciel.
-</p>
+        <section id="apropos">
 
-<img
-class="image-sport"
-src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg"
-alt="Sport">
+            <h2>À propos de moi</h2>
 
-</section>
+            <p>
+                Bonjour, je m'appelle Noa et j'ai 16 ans.
 
-<section id="projets">
+                Je suis actuellement en classe de seconde.
 
-<h2>Mes projets</h2>
+                Je suis passionné par le sport et je pratique notamment le football, le golf, la musculation, la course à pied, le vélo, le tennis et la natation.
 
-<div class="projets">
+                J'aime également les jeux vidéo, les films et passer du temps avec mes amis.
 
-<div class="carte">
-<h3>Portfolio Web</h3>
-<p>Création d'un portfolio personnel en HTML et CSS.</p>
-</div>
+                Je m'intéresse beaucoup à l'informatique et aux nouvelles technologies.
 
-<div class="carte">
-<h3>Programmation</h3>
-<p>Apprentissage du Python et création de petits programmes.</p>
-</div>
+                Mon objectif est de poursuivre mes études dans ce domaine afin de devenir développeur logiciel.
+            </p>
 
-<div class="carte">
-<h3>Projet futur</h3>
-<p>Développer un site web ou une application complète.</p>
-</div>
+            <img
+            class="image-sport"
+            src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg"
+            alt="Sport">
 
-</div>
+        </section>
 
-</section>
+        <section id="projets">
 
-<section id="contact">
+            <h2>Mes projets</h2>
 
-<h2>Contact</h2>
+            <div class="projets">
 
-<p class="contact">
-📧 noa@email.com
-</p>
+                <div class="carte">
+                    <h3>💻 Portfolio Web</h3>
+                    <p>
+                        Création d'un portfolio personnel en HTML et CSS.
+                    </p>
+                </div>
 
-</section>
+                <div class="carte">
+                    <h3>🐍 Python</h3>
+                    <p>
+                        Apprentissage du langage Python et création de programmes simples.
+                    </p>
+                </div>
+
+                <div class="carte">
+                    <h3>🚀 Projet futur</h3>
+                    <p>
+                        Développer une application ou un jeu vidéo complet.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p class="contact">
+                📧 noaduquesnoy978@gmail.com
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- Colonne droite -->
+
+    <aside class="sidebar">
+
+        <div class="info-card">
+            <h3>⚽ Sports</h3>
+            <p>
+                Football, golf, musculation, course à pied, vélo, tennis et natation.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>💻 Centres d'intérêt</h3>
+            <p>
+                Informatique, programmation, jeux vidéo et nouvelles technologies.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>🏆 Qualités</h3>
+            <p>
+                Motivation, curiosité, persévérance et envie d'apprendre.
+            </p>
+        </div>
+
+    </aside>
 
 </main>
 
 <footer>
-<p>© 2026 - Portfolio de Noa</p>
+    <p>© 2026 - Portfolio de Noa</p>
 </footer>
 
 <script>
@@ -102,14 +161,13 @@ const bouton = document.getElementById("themeBtn");
 
 bouton.addEventListener("click", () => {
 
-document.body.classList.toggle("light-mode");
+    document.body.classList.toggle("light-mode");
 
-if(document.body.classList.contains("light-mode")){
-    bouton.innerHTML = "☀️";
-}
-else{
-    bouton.innerHTML = "🌙";
-}
+    if(document.body.classList.contains("light-mode")){
+        bouton.innerHTML = "☀️";
+    }else{
+        bouton.innerHTML = "🌙";
+    }
 
 });
 
