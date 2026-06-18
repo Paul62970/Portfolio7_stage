@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Portfolio de Noa</title>
 
 <style>
@@ -13,8 +14,12 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, sans-serif;
+    font-family:'Segoe UI',sans-serif;
     color:white;
     min-height:100vh;
 
@@ -24,7 +29,7 @@ body{
     linear-gradient(135deg,#0f172a,#1e293b,#312e81);
 
     background-size:400% 400%;
-    animation: fondAnime 12s ease infinite;
+    animation:fondAnime 12s ease infinite;
 }
 
 @keyframes fondAnime{
@@ -35,15 +40,19 @@ body{
 
 header{
     text-align:center;
-    padding:40px 20px;
+    padding:50px 20px;
     background:rgba(0,0,0,0.25);
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(12px);
 }
 
 h1{
     font-size:3rem;
-    color:#ffffff;
-    text-shadow:0 0 20px cyan;
+    text-shadow:0 0 15px cyan;
+}
+
+.sous-titre{
+    margin-top:10px;
+    color:#d1d5db;
 }
 
 .menu{
@@ -54,10 +63,10 @@ h1{
     display:inline-block;
     padding:12px 20px;
     margin:8px;
-    text-decoration:none;
     color:white;
+    text-decoration:none;
     border-radius:30px;
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.1);
     border:1px solid rgba(255,255,255,0.2);
     transition:0.3s;
 }
@@ -68,53 +77,83 @@ h1{
 }
 
 main{
-    display:flex;
-    justify-content:center;
-    padding:40px 20px;
+    width:90%;
+    max-width:1000px;
+    margin:auto;
 }
 
 section{
-    max-width:900px;
-    width:100%;
+    margin:40px 0;
     padding:30px;
 
     background:rgba(255,255,255,0.08);
     backdrop-filter:blur(15px);
 
     border-radius:25px;
+
     border:1px solid rgba(255,255,255,0.15);
 
     box-shadow:
     0 0 25px rgba(0,255,255,0.3),
-    0 0 50px rgba(128,0,255,0.2);
+    0 0 50px rgba(128,0,255,0.15);
 }
 
 h2{
     text-align:center;
+    margin-bottom:20px;
     color:#00ffff;
-    margin-bottom:25px;
 }
 
 p{
     line-height:1.8;
-    font-size:18px;
 }
 
-img{
+.image-sport{
     display:block;
     margin:30px auto;
     width:350px;
     max-width:90%;
     border-radius:20px;
     border:3px solid cyan;
-    box-shadow:0 0 25px cyan;
+}
+
+.competences{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    padding:12px 20px;
+    border-radius:30px;
+    background:rgba(0,255,255,0.15);
+    border:1px solid cyan;
+}
+
+.projets{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.carte{
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+
+.carte:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px cyan;
 }
 
 footer{
     text-align:center;
-    padding:20px;
+    padding:25px;
+    margin-top:40px;
     background:rgba(0,0,0,0.25);
-    backdrop-filter:blur(10px);
 }
 
 </style>
@@ -123,41 +162,101 @@ footer{
 <body>
 
 <header>
-    <h1>Portfolio</h1>
 
-    <div class="menu">
-        <a href="index.html" class="btn">Accueil</a>
-        <a href="https://www.netflix.com/fr/" target="_blank" class="btn">Netflix</a>
-        <a href="https://www.youtube.com/" target="_blank" class="btn">YouTube</a>
-    </div>
+<h1>Portfolio de Noa</h1>
+
+<p class="sous-titre">
+Élève de seconde • Passionné de sport et d'informatique
+</p>
+
+<div class="menu">
+    <a href="#apropos" class="btn">À propos</a>
+    <a href="#competences" class="btn">Compétences</a>
+    <a href="#projets" class="btn">Projets</a>
+    <a href="#contact" class="btn">Contact</a>
+</div>
+
 </header>
 
 <main>
 
-<section>
+<section id="apropos">
 
 <h2>À propos de moi</h2>
 
 <p>
-Bonjour, je m'appelle Noa, j'ai 16 ans et je suis actuellement élève en classe de seconde.
+Bonjour, je m'appelle Noa et j'ai 16 ans.
 
-Je suis passionné par le sport et j'aime rester actif au quotidien. Je pratique le football deux fois par semaine, mais je fais également du golf, de la musculation, de la course à pied, du vélo, du tennis et un peu de natation.
+Je suis actuellement en classe de seconde et je m'intéresse particulièrement à l'informatique et aux nouvelles technologies.
 
-Le sport occupe une place importante dans ma vie, car j'aime relever de nouveaux défis et me dépasser.
+Je pratique plusieurs sports : football, golf, musculation, course à pied, vélo, tennis et natation. Le sport m'aide à développer ma discipline, ma persévérance et mon esprit d'équipe.
 
-Lorsque je ne fais pas de sport, j'aime passer du temps sur les écrans pour jouer à des jeux vidéo, regarder des films ou découvrir de nouvelles vidéos.
+J'aime également les jeux vidéo, les films et passer du temps avec mes amis.
 
-Je m'intéresse également à l'informatique et aux nouvelles technologies. J'aime apprendre de nouvelles choses et développer mes compétences dans différents domaines afin de préparer mon avenir professionnel.
+Mon objectif est de poursuivre mes études dans le domaine de l'informatique afin de devenir développeur logiciel.
 </p>
 
-<img src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg" alt="Sport">
+<img
+class="image-sport"
+src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg"
+alt="Sport">
+
+</section>
+
+<section id="competences">
+
+<h2>Mes compétences</h2>
+
+<div class="competences">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Python</div>
+    <div class="skill">Informatique</div>
+    <div class="skill">Travail en équipe</div>
+    <div class="skill">Organisation</div>
+</div>
+
+</section>
+
+<section id="projets">
+
+<h2>Mes projets</h2>
+
+<div class="projets">
+
+<div class="carte">
+<h3>Portfolio Web</h3>
+<p>Création d'un site personnel en HTML et CSS.</p>
+</div>
+
+<div class="carte">
+<h3>Projet Python</h3>
+<p>Développement de petits programmes pour apprendre la programmation.</p>
+</div>
+
+<div class="carte">
+<h3>Projet futur</h3>
+<p>Création d'une application ou d'un jeu vidéo.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p style="text-align:center;">
+📧 noa@email.com
+</p>
 
 </section>
 
 </main>
 
 <footer>
-    <p>© 2026 - Noa</p>
+<p>© 2026 - Portfolio de Noa</p>
 </footer>
 
 </body>
