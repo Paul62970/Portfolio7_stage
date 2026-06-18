@@ -5,33 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio - Pierre -</title>
     <link rel="stylesheet" href="pierre.css">
+
+
 </head>
 <body>
+    
     <header>
-        <h1> Bienvenue sur le site de Boussemart Pierre !</h1>
-        <p><a href="index.html">← Retour à l'accueil</a><br> </p>
-            
+        <h1> Bienvenue sur le site de Boussemart Pierre 
+            <div style="text-align: right;" > 
+                <button class="btn_mode_sombre" onclick="changerTheme()"> 
+                    🌙 Mode sombre / clair
+
+                </button>
+            </div>
+                
+        </h1>
+
+
+        <a href="index.html" class="bouton">Accueil</a> 
+        <a href="https://www.epitech.eu" class="bouton">Le lieux de stage</a>
+        <a href="https://lpo-charlotte-perriand-genech.59.ac-lille.fr/" class="bouton">Mon lycée</a>    
     </header>
 
     <main>
+
+        
         <!------ Sommaire -------->
         <section>
-            <h2>Sommaire</h2>
-                <ul>
-                    <li><a href="#moi">À propos de moi</a></li>
-                    <li><a href="#stage">Pourquoi je réalise ce stage?</a></li>
-                    <li><a href="#passion">Quels sont mes passions ?</a></li>
-                </ul>
+            <h1>Sommaire</h1>
+                
+                <a href="#moi" class="bouton">À propos de moi</a>
+                <a href="#stage" class="bouton">Pourquoi je réalise ce stage?</a>
+                <a href="#passion" class="bouton">Quels sont mes passions ?</a>
+                
         </section>
         <!------ moi -------->
         <section id="moi" class="bloc">
-            <h2>À propos de moi </h2>
+            <h1>À propos de moi </h1>
             <p>J'ai 16 ans et je suis au lycée <a href="https://lpo-charlotte-perriand-genech.59.ac-lille.fr/">Charlotte Perriands</a>.</p>
             
         </section>
         <!------ stage -------->
         <section id="stage" class="bloc">  
-            <h2>Pourquoi je réalise ce stage? </h2>
+            <h1>Pourquoi je réalise ce stage? </h1>
             <p>J'ai décidé de réaliser mon stage de seconde à l'école d'informatique <a href="https://www.epitech.eu"> EPITECH</a>. Comme je me destine à une école d'ingénieur et je n'avais jamais vraiment réalisé d'informatique, je souhaité donc essayer</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxpDu3SEKZa-VsyXMy7YJ7N10fBuggjT5i2dt_Mjpf5Yhd_tSfqLi14Q&s=10"
              alt="Logo de EPITECH"
@@ -41,12 +57,12 @@
         <!------ passion -------->
         <section id="passion" class="bloc">
           
-            <h2>Quels sont mes passions ?</h2>
+            <h1>Quels sont mes passions ?</h1>
                <li>
                     <h3>Le sport</h3>
                         <li>
                                 <ul>
-                                    <h4>Le tennis</h4>
+                                    <h4 class="Mes_sport_titres">Le tennis</h4>
                                     <p>Je fais du tennis depuis l’âge de 8 ans. Cela favorise ma concentration.</p>
                                     <h4>Le tennis de table</h4>
                                     <p>Je fais du tennis de table depuis 4 ans. Je participe au championnat cela me permet de mieux gérer mon stress.</p>
@@ -65,7 +81,22 @@
     <footer>
         <p>© 2026 - Pierre Boussemart | Tous droits réservés</p>
     </footer>
+    
     <script src="script.js"></script>
+
+    <script>
+
+        /* ==========================
+           MODE SOMBRE / CLAIR
+        ========================== */
+
+        function changerTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
+        }
+
+    </script>
 </body>
 
 </html>
