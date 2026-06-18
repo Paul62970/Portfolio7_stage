@@ -1,32 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Noa</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio de Noa</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:white;
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at 20% 20%, rgba(0,255,255,0.3), transparent 20%),
+    radial-gradient(circle at 80% 80%, rgba(255,0,255,0.3), transparent 20%),
+    linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+
+    background-size:400% 400%;
+    animation: fondAnime 12s ease infinite;
+}
+
+@keyframes fondAnime{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(10px);
+}
+
+h1{
+    font-size:3rem;
+    color:#ffffff;
+    text-shadow:0 0 20px cyan;
+}
+
+.menu{
+    margin-top:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    margin:8px;
+    text-decoration:none;
+    color:white;
+    border-radius:30px;
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.2);
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px cyan;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+section{
+    max-width:900px;
+    width:100%;
+    padding:30px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.3),
+    0 0 50px rgba(128,0,255,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#00ffff;
+    margin-bottom:25px;
+}
+
+p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+img{
+    display:block;
+    margin:30px auto;
+    width:350px;
+    max-width:90%;
+    border-radius:20px;
+    border:3px solid cyan;
+    box-shadow:0 0 25px cyan;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(10px);
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Bienvenue sur le site de Noa !</h1>
-        <p><a href="index.html">← Retour à l'accueil</a></p>
-        <a href=https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.netflix.com/fr/&ved=2ahUKEwjuwqWhvImVAxXkT6QEHX28E24QFnoECA0QAQ&usg=AOvVaw2ivQKejz07phmO-sipDbaw>Netflix</a></p>
-        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/&ved=2ahUKEwiSmc2AvYmVAxUkBfsDHd6uN0QQFnoECCkQAQ&usg=AOvVaw0usXxGa_x5y1xoI_LaL0-1">Youtube</a></p>
-        </header>
-    <main>
-        <section>
-            <h2>"A propos de moi"</h2>
-            <p>Bonjour, je m'appelle Noa, j'ai 16 ans et je suis actuellement élève en classe de seconde. Je pratique 2 fois par semaine du foot mais je fais aussi du golf de la salle de sport mais aussi de la course a pied ou du velo ou du tennis et un peu de natation. Mes passions: le sport je suis une personne qui aime bien bouge je n'aime pas rester a rien faire et quand je fais pas de sport je suis plutôt sur les écrans pour jouer ou pour regarder des films ou des vidéos. 
-            </p>
-            <img src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg" alt="Description" width ="600"
-            height ="400">
-            
-            
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 - Noa | Fait avec passion</p>
-    </footer>
-    <script src="script.js"></script>
+
+<header>
+    <h1>Portfolio</h1>
+
+    <div class="menu">
+        <a href="index.html" class="btn">Accueil</a>
+        <a href="https://www.netflix.com/fr/" target="_blank" class="btn">Netflix</a>
+        <a href="https://www.youtube.com/" target="_blank" class="btn">YouTube</a>
+    </div>
+</header>
+
+<main>
+
+<section>
+
+<h2>À propos de moi</h2>
+
+<p>
+Bonjour, je m'appelle Noa, j'ai 16 ans et je suis actuellement élève en classe de seconde.
+
+Je suis passionné par le sport et j'aime rester actif au quotidien. Je pratique le football deux fois par semaine, mais je fais également du golf, de la musculation, de la course à pied, du vélo, du tennis et un peu de natation.
+
+Le sport occupe une place importante dans ma vie, car j'aime relever de nouveaux défis et me dépasser.
+
+Lorsque je ne fais pas de sport, j'aime passer du temps sur les écrans pour jouer à des jeux vidéo, regarder des films ou découvrir de nouvelles vidéos.
+
+Je m'intéresse également à l'informatique et aux nouvelles technologies. J'aime apprendre de nouvelles choses et développer mes compétences dans différents domaines afin de préparer mon avenir professionnel.
+</p>
+
+<img src="https://www.ombreedanjou.fr/medias/2019/01/Licence-OK_Sport-4437974-1.jpeg" alt="Sport">
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Noa</p>
+</footer>
+
 </body>
 </html>
