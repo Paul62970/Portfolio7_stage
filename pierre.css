@@ -16,6 +16,7 @@ body {
 
 }
 
+/* Définit la taille de l'écriture dans les titres et les paragraphes*/
 
 p{
     font-size: 20px;
@@ -35,12 +36,10 @@ h3 {
     font-size: 25px;
 }
 
-
 .Mes_sport_titres{
     text-align: center;
 
 }
-
 
 .paragraphe {
     background-color: lab(100% 0.01 -0.01);
@@ -58,21 +57,20 @@ h3 {
 
 .groupe{
     background-color: lab(88.38% -10.97 35.77);
+
     color: black;
 
     width: 70%;
 
     margin: 20px auto;
+
     padding: 20px;
 
     border-radius: 15px;
 
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 
-
 }
-
-
 
 .btn_mode_sombre {
     display: inline-block;
@@ -101,9 +99,9 @@ h3 {
 
 .btn_mode_sombre:hover {
     background-color: #ddd;
+
     transform: scale(1.05);
 }
-
 
 .bouton {
     display: inline-block;
@@ -122,48 +120,48 @@ h3 {
     transition: 0.3s;
 }
 
-
 /* Quand la souris passe dessus */
 .bouton:hover {
     background-color: lch(34.12% 37.2 103.77);
+
     transform: scale(1.05);
+
     color: white;
 }
 
-
-/* ==========================
-   IMAGES
-========================== */
-
 .image {
     width: 300px;
+
     border-radius: 10px;
 }
 
 /* Image à gauche */
 .gauche {
     float: left;
+
     margin-left: 20px;
 }
 
 /* Image à droite */
 .droite {
     float: right;
+
     margin-right: 200px;
 }
 
 /* Image centrée */
 .centre {
     display: block;
+
     margin: auto;
 }
 
-/*seulemnt pour pierre2.html*/
-
+/*--------------------------------------seulemnt pour pierre2.html -----------------------------------------------------------*/
 .withimage {
     display: inline-block;
 
     background-color: lab(88.38% -10.97 35.77);
+
     color: #333;
 
     text-decoration: none;
@@ -176,35 +174,42 @@ h3 {
 
     transition: 0.3s;
 }
+/*--------------------------------------Fin seulemnt pour pierre2.html -----------------------------------------------------------*/
 
-/* Mon mode sombre*/
 
+/* --------------------------------------------Mon mode sombre------------------------------------------------------------*/
 .dark-mode {
     background-color: hwb(263 1% 76%);
+
     text-align: center;
+
     color: white;
+
     font-size: 20px;
     
     
-    /* cela change la couleur des étiquettes "groupe" en mode sombre*/
+    /* cela change la couleur des étiquettes class="groupe" pour la mettre en mode sombre*/
     .groupe{
-     background-color: hwb(239 73% 6%);
+        background-color: hwb(239 73% 6%);
+
         color: black;
 
-     width: 70%;
+        width: 70%;
 
         margin: 20px auto;
-     padding: 20px;
+
+        padding: 20px;
 
         border-radius: 15px;
 
-     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     }
-
+    /* cela change la couleur des bouton class="bouton" pour la mettre en mode sombre*/
     .bouton {
         display: inline-block;
 
         background-color: hwb(239 73% 6%);
+
         color: #333;
 
         text-decoration: none;
@@ -217,11 +222,35 @@ h3 {
 
         transition: 0.3s;
     }
+
+    /* cela change la couleur de l' bouton class="bouton" pour la mettre en mode sombre*/
     .bouton:hover {
         background-color: lab(3.11% 13.79 -20.93);
+
         transform: scale(1.05);
+
         color: white;
     }
+    /*--------------------------------------seulemnt pour pierre2.html -----------------------------------------------------------*/
+    .withimage {
+        display: inline-block;
 
+        background-color: hwb(239 73% 6%);
+
+        color: #333;
+
+        text-decoration: none;
+
+        padding: 12px 20px;
+
+        border-radius: 10px;
+
+        margin: 10px;
+
+        transition: 0.3s;
+    }
+
+    /*--------------------------------------Fin seulemnt pour pierre2.html -----------------------------------------------------------*/
 
 }
+/* --------------------------------------------Fin de mon mode sombre------------------------------------------------------------*/
