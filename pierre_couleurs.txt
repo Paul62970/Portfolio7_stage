@@ -1,0 +1,13 @@
+version claire
+
+body:
+background-color: hsl(54, 89%, 93%); 
+
+.groupe:
+background-color: lab(88.38% -10.97 35.77);
+
+version sombre
+body:
+background-color: hwb(263 1% 76%);
+groupe:
+background-color: hwb(239 73% 6%);

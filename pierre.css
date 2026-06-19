@@ -42,7 +42,8 @@ h3 {
 }
 
 .paragraphe {
-    background-color: lab(100% 0.01 -0.01);
+    background-color: hsl(54, 89%, 93%);
+
     color: black;
 
     width: 70%;
@@ -53,10 +54,12 @@ h3 {
     border-radius: 15px;
 
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+    transition: 0.5s;
 }
 
 .groupe{
-    background-color: lab(88.38% -10.97 35.77);
+    background-color: hsl(53, 26%, 69%);
 
     color: black;
 
@@ -69,13 +72,15 @@ h3 {
     border-radius: 15px;
 
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+    transition: 0.5s;
 
 }
 
 .btn_mode_sombre {
     display: inline-block;
 
-    position: absolute;
+    position: fixed;
     
     top: 10px;
     
@@ -106,8 +111,8 @@ h3 {
 .bouton {
     display: inline-block;
 
-    background-color: lab(88.38% -10.97 35.77);
-    color: #333;
+    background-color: hsl(53, 26%, 69%);
+    color: black;
 
     text-decoration: none;
 
@@ -122,7 +127,7 @@ h3 {
 
 /* Quand la souris passe dessus */
 .bouton:hover {
-    background-color: lch(34.12% 37.2 103.77);
+    background-color: hwb(53 38% 52%);
 
     transform: scale(1.05);
 
@@ -160,7 +165,7 @@ h3 {
 .withimage {
     display: inline-block;
 
-    background-color: lab(88.38% -10.97 35.77);
+    background-color: hsl(53, 26%, 69%);
 
     color: #333;
 
@@ -179,7 +184,7 @@ h3 {
 
 /* --------------------------------------------Mon mode sombre------------------------------------------------------------*/
 .dark-mode {
-    background-color: hwb(263 1% 76%);
+    background-color: lch(3.85% 43.27 303.46);
 
     text-align: center;
 
@@ -187,12 +192,26 @@ h3 {
 
     font-size: 20px;
     
+    .paragraphe {
+        background-color: hwb(239 73% 6%);
+        color: black;
+
+        width: 70%;
+
+        margin: 20px auto;
+        padding: 20px;
+
+        border-radius: 15px;
+
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+    
     
     /* cela change la couleur des étiquettes class="groupe" pour la mettre en mode sombre*/
     .groupe{
-        background-color: hwb(239 73% 6%);
+        background-color: lch(4.69% 15.64 290.41);
 
-        color: black;
+        color: white;
 
         width: 70%;
 
@@ -207,6 +226,8 @@ h3 {
     /* cela change la couleur des bouton class="bouton" pour la mettre en mode sombre*/
     .bouton {
         display: inline-block;
+
+        color: white;
 
         background-color: hwb(239 73% 6%);
 
@@ -225,7 +246,7 @@ h3 {
 
     /* cela change la couleur de l' bouton class="bouton" pour la mettre en mode sombre*/
     .bouton:hover {
-        background-color: lab(3.11% 13.79 -20.93);
+        background-color: lch(4.69% 15.64 290.41);
 
         transform: scale(1.05);
 
