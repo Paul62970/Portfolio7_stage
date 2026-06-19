@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Première semaine -</title>
+    <link rel="stylesheet" href="pierre.css">
+
+
+</head>
+<body>
+    
+    <header class="">
+        <h1> Première semaine de stage à EPITECH
+            <div> 
+                <button class="btn_mode_sombre" onclick="changerTheme()"> 
+                    🌙 Mode sombre / clair
+
+                </button>
+            </div>
+                
+        </h1>
+        <a href="pierre.html" class="bouton">Retour à ma présentation</a>
+        
+            
+    </header>
+
+    <main>
+
+        
+        <img src="pierre1.jpg" width="700" lenght="400">
+        <br>
+        <p class="withimage">Voici l'emploi du temps de ma 1ère semaine de stage</p>
+        
+            
+
+        <!------ Sommaire -------->
+        <section>
+            <h1>Sommaire</h1>
+                
+                <a href="#1jour" class="bouton">1ère journée</a>
+                
+                
+        </section>
+
+        <section id="1jour" class="bloc">
+            
+            <div class="groupe">
+                
+                <h1>1ère journé</h1>
+                <p class="paragraphe"> </p>
+            
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>© 2026 - Pierre Boussemart | Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        function changerTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
