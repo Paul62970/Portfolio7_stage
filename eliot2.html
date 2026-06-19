@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Première semaine a epitech </title>
+     <link rel="stylesheet" href="eliot.css">
 </head>
 <body>
 
     <h1> Le premier jour</h1>
-    <p> le prmier jour on nous a doné notre emploi du temps </p>
+     <button class="btn_mode_sombre" onclick="changerTheme()"> 
+                    🌙 Mode sombre / clair
+
+                </button>
+    <p> le premier jour on nous a doné notre emploi du temps </p>
     <img src="pierre1.jpg" width="700" lenght="400">
-    
+
     
 </body>
+ <script>
+
+        /* ==========================
+           MODE SOMBRE / CLAIR
+        ========================== */
+
+        function changerTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
+        }
+
+    </script>
 </html>

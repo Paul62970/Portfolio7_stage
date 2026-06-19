@@ -45,7 +45,7 @@
 
 
     <header>
-        <h1> Bienvenue sur le site de eliot ! </h1>
+        <h1> Bienvenue sur le site de eliot </h1>
         <button class="btn_mode_sombre" onclick="changerTheme()"> 
                     🌙 Mode sombre / clair
 
@@ -58,20 +58,20 @@
             <button class="color-btn" style="background-color: #b700ff;" 
                     onclick="changeBackgroundColor('#b700ff')" title="Violet"></button>
             
-            <button class="color-btn" style="background-color: #f3f4f6;" 
-                    onclick="changeBackgroundColor('#f3f4f6')" title="Gris"></button>
+            <button class="color-btn" style="background-color: #0055ff;" 
+                    onclick="changeBackgroundColor('#0055ff')" title="bleu"></button>
             
-            <button class="color-btn" style="background-color: #fef3c7;" 
-                    onclick="changeBackgroundColor('#fef3c7')" title="Jaune"></button>
+            <button class="color-btn" style="background-color: #ffcc00;" 
+                    onclick="changeBackgroundColor('#ffcc00')" title="Jaune"></button>
             
-            <button class="color-btn" style="background-color: #dcfce7;" 
-                    onclick="changeBackgroundColor('#dcfce7')" title="Vert"></button>
+            <button class="color-btn" style="background-color: #00ff59;" 
+                    onclick="changeBackgroundColor('#00ff59')" title="Vert"></button>
             
-            <button class="color-btn" style="background-color: #dbeafe;" 
-                    onclick="changeBackgroundColor('#dbeafe')" title="Bleu"></button>
+            <button class="color-btn" style="background-color:   #ff0000;"
+                    onclick="changeBackgroundColor('#ff0000')" title="rouge"></button>
             
-            <button class="color-btn" style="background-color: #fce7f3;" 
-                    onclick="changeBackgroundColor('#fce7f3')" title="Rose"></button>
+            <button class="color-btn" style="background-color: #ff0090;" 
+                    onclick="changeBackgroundColor('#ff0090')" title="Rose"></button>
             
             <button class="color-btn" style="background-color: #066eff;" 
                     onclick="changeBackgroundColor('#066eff')" title="Bleu"></button>
@@ -84,13 +84,26 @@
 
 
     <section>
+       <div class="groupe">
         <h2>À propos de moi </h2>
-        <p1 class="paragraphe">J aime manger sortir faire du drone et de la voiture telecomandé actuelement je suis au lycé jean prouvé a lomme. <a href="https://www.lycee-jean-prouve.fr/">Mon lycée </a> </p1>
+        <p1 class="paragraphe">J'ai 15 ans et j étudie actuelement au lycé jean prouvé a lomme. <a href="https://www.lycee-jean-prouve.fr/">Mon lycée </a> </p1>
+    </div>
     </section>
-    <h1>Ce que je voudrai faire plutard</h1>
-       <section>
-        <p1 class="paragraphe">Je n ais pas encore d idée pour un futur métier mais pour ma 1ere et terminal je souhaiterais faire un bac sti2d ou faire pilote de drone professionelle. <a href="https://www.lycee-jean-prouve.fr/formations/prebac/bac-technologique/"> information sti2d </a></p1>
-       </section>
+    <div class="groupe"><h1>Ce que je voudrai faire plus tard</h1>
+        <p1 class="paragraphe">Je souhaiterais faire un bac sti2d ou faire pilote de drone professionelle. <a href="https://www.lycee-jean-prouve.fr/formations/prebac/bac-technologique/"> information sti2d </a></p1>
+       </div>
+       <section >  
+            <div class="groupe">
+                <h1>Pourquoi je réalise ce stage? </h1>
+                <p class="paragraphe">J'ai fait mon stage a  <a href="https://www.epitech.eu" class="site"> EPITECH</a>. Comme je voulai aprendre a faire du code je me suis dirigé vers cette ecole car elle est tres réputer dans le milieux.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxpDu3SEKZa-VsyXMy7YJ7N10fBuggjT5i2dt_Mjpf5Yhd_tSfqLi14Q&s=10"
+                alt="Logo de EPITECH"
+                width="200"
+                lenght="100"
+                />
+            </div>
+        </section>
+
        
 </main>
 </body>
@@ -117,5 +130,18 @@
                 document.body.style.color = '#1f2937';
             }
         }
+    </script>
+    <script>
+
+        /* ==========================
+           MODE SOMBRE / CLAIR
+        ========================== */
+
+        function changerTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
+        }
+
     </script>
 </html>
