@@ -1,8 +1,8 @@
 
 :root {
-    --primary-color: #ef4444;
-    --secondary-color: #3b82f6;
-    --text-dark: #1f2937;
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --text-dark: #ffffff;
     --text-light: #ffffff;
     --bg-white: #ffffff;
     --bg-gray: #f3f4f6;
@@ -19,10 +19,11 @@ body {
     background-color: var(--bg-white);
     color: var(--text-dark);
     line-height: 1.6;
+    text-align: center;
 }
 
 header {
-    background: linear-gradient(135deg, var(--primary-color), #dc2626);
+    background: linear-gradient(135deg, var(--primary-color), #000000);
     padding: 2rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,13 +91,6 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: var(--text-dark);
-    color: var(--text-light);
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-}
 
 footer h1 {
     color: var(--secondary-color);
@@ -111,4 +105,62 @@ footer h1 {
     .card {
         width: 100%;
     }
+}
+.paragraphe {
+    background-color: lab(100% 0.01 -0.01);
+    color: black;
+
+    width: 70%;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.btn_mode_sombre {
+    display: inline-block;
+
+    position: absolute;
+    
+    top: 10px;
+    
+    right: 10px;
+
+    background-color: white;
+    
+    color: #333;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    margin: 10px;
+
+    transition: 0.3s;
+    
+}
+.btn_mode_sombre:hover {
+    background-color: #ddd;
+
+    transform: scale(1.05);
+}
+.bouton {
+    display: inline-block;
+
+    background-color: lab(88.38% -10.97 35.77);
+    color: #333;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    transition: 0.3s;
 }
