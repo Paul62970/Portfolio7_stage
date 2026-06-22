@@ -1,0 +1,132 @@
+/* ==========================
+   STYLE GENERAL DU SITE
+========================== */
+
+body {
+    background-color: #f3fa92;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    transition: 0.5s;
+}
+
+/* ==========================
+   MODE SOMBRE
+========================== */
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* ==========================
+   TITRES
+========================== */
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: cyan;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    color: cyan;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 30px;
+    margin-top: 30px;
+    color: rgb(253, 177, 0);
+}
+
+/* ==========================
+   CARTES DE TEXTE
+========================== */
+
+.carte {
+    background-color: #000000;
+    color: white;
+
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 20px #d9f457af;
+}
+
+/* ==========================
+   BOUTONS
+========================== */
+
+.bouton {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    transition: 0.3s;
+
+    border: none;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
+.image {
+    width: 350px;
+    border-radius: 15px;
+    border: 3px solid cyan;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Image à gauche */
+.gauche {
+    float: left;
+    margin-left: 20px;
+}
+
+/* Image à droite */
+.droite {
+    float: right;
+    margin-right: 20px;
+}
+
+/* Image centrée */
+.centre {
+    display: block;
+    margin: auto;
+}
+
+/* ==========================
+   FLEX
+========================== */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
