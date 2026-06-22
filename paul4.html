@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mon stage</title>
+    <link rel="stylesheet" href="paul2.css">
+</head>
+
+<body>
+
+    <a href="paul.html" class="bouton">
+        Retour
+    </a>
+
+    <br><iframe src="https://www.snake.fr/jeux/google-snake" width="50%" height="700"></iframe></br>
+
+
+<textarea id="note" style="width:50%;height:200px;"> </textarea>
+
+<script>
+// Charger le texte sauvé
+const saved = localStorage.getItem("note");
+if (saved !== null) {
+    document.getElementById("note").value = saved;
+}
+
+// Sauvegarder automatiquement à chaque modification
+document.getElementById("note").addEventListener("input", function () {
+    localStorage.setItem("note", this.value);
+});
+</script>
+
+</body>
+</html>
