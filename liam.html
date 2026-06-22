@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio -Liam bateau</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="carte">
-    <h2>🎯 Résultats de pétanque</h2>
-    <a href="https://www.petanque-generation.fr/licencies/resultats/concours/officiel" target="_blank">
-        Voir les résultats en direct
-    </a>
-</section>
-    <!-- =====================
-         BOUTON MODE SOMBRE
-    ====================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Portfolio - Liam Bateau</title>
 
-    <button class="bouton" onclick="changerTheme()">
-        🌙 Mode sombre / clair
-    </button>
-    <head>
-  <style>
- 
-/* ==========================
-   STYLE GENERAL DU SITE
-========================== */
+<meta name="description" content="Portfolio de Liam.">
 
+<style>
 body {
-    background-color: #92fab3d3; /* Fond rouge */
+    background-color: #92fab3d3;
     color: rgb(5, 5, 5);
     font-family: Arial, sans-serif;
     text-align: center;
@@ -36,157 +17,236 @@ body {
     transition: 0.5s;
 }
 
-/* ==========================
-   MODE SOMBRE
-========================== */
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-.dark-mode {
-    background-color: #121212;
+button:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
+}
+
+button.active {
+    background-color: #333;
     color: white;
 }
-
-/* ==========================
-   TITRES
-========================== */
-
-h1 {
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 30px;
-    margin-top: 30px;
-}
-
-h3 {
-    font-size: 25px;
-}
-
-/* ==========================
-   CARTES DE TEXTE
-========================== */
 
 .carte {
     background-color: white;
     color: black;
-
     width: 70%;
-
     margin: 20px auto;
     padding: 20px;
-
     border-radius: 15px;
-
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
-/* ==========================
-   BOUTONS
-========================== */
+a {
+    color: #0066cc;
+}
 
-.bouton {
-    display: inline-block;
+a:hover {
+    text-decoration: underline;
+}
 
-    background-color: white;
-    color: #333;
-
-    text-decoration: none;
-
-    padding: 12px 20px;
-
-    border-radius: 10px;
-
-    margin: 10px;
-
+img {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     transition: 0.3s;
-}
-
-/* Quand la souris passe dessus */
-.bouton:hover {
-    background-color: #ddd;
-    transform: scale(1.05);
-}
-
-/* ==========================
-   BOUTON SPECIAL
-========================== */
-
-.bouton-page {
-    background-color: rgb(241, 241, 241);
-    color: rgb(0, 0, 0);
-}
-
-.bouton-page:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-/* ==========================
-   IMAGES
-========================== */
-
-.image {
-    width: 300px;
+    width: 80%;
+    max-width: 500px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
-/* Image à gauche */
-.gauche {
-    float: left;
-    margin-left: 20px;
+img:hover {
+    transform: scale(1.02);
 }
-
-/* Image à droite */
-.droite {
-    float: right;
-    margin-right: 20px;
-}
-
-/* Image centrée */
-.centre {
-    display: block;
-    margin: auto;
-}
-
-/* ==========================
-   CONTAINER FLEX
-   Permet de placer les
-   éléments où tu veux
-========================== */
-
-.flex {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-  </style>
+</style>
 </head>
-    <header>
-        <h1> Bienvenue sur le site de Liam !</h1>
-        <p><a href="index.html">← Retour à l'accueil</a></p>
-    </header>
-    </section>
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzJnbmZzcmI1czBnNjZobXhiMWQxcHN0NTZ6Nmk4cDJyOXNuNnN2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPnAiaMCws8nOsE/giphy.gif" >
-    <main>
-        <section>
-        <h2>À propos de moi</h2>
-        <p>j'aime manger,dormir,ma play.</p>
-        <h3>mon lycée</h3>
-        <p>Lycée de l'escaut, Valenciennes</p>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.Xr0CCHLlAEeNdEFQ2F7wawHaC0%3Fpid%3DApi&f=1&ipt=a4940fa4e525bc1d7d8888a863bf52ea7ee4e7d4e51306bf23583fadb1bc0b11&ipo=images" alt="description">
-        
-    </main>
-     <h1>Mon stage</h>
-     <p>Epitech, Lille</p>
-     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.capcampus.com%2Fimg%2Fu%2F1%2Fepitech-lille.jpg&f=1&nofb=1&ipt=3da627b88775b1fb75f968760b782b8228368cf379a9a56e73f26cf2bb46c31a" alt="description" height="200px">
-     </main>
+
+<body>
+
+<!-- BOUTONS LANGUES -->
+<button onclick="changerLangue('fr')" id="btn-fr">🇫🇷 FR</button>
+<button onclick="changerLangue('lb')" id="btn-lb">🇱🇧 LB</button>
+<button onclick="changerLangue('la')" id="btn-la">🏛 LAT</button>
+<button onclick="changerLangue('ln')" id="btn-ln">🌍 LIN</button>
+<button onclick="changerLangue('ko')" id="btn-ko">🇰🇷 KO</button>
+
 <header>
-        <p6><a href="https://www.epitech.eu/""> ← lieux de stage</a></p6>
-    </header>
-    <footer>
-        <p>© 2026 - Liam | Fait avec passion dites que c'est beau jy ai mit tout mon coeur</p>
-    </footer>
-    <script src="script.js"></script>
+    <h1 id="titre">Bienvenue sur le site de Liam !</h1>
+    <p><a id="retour" href="index.html">← Retour à l'accueil</a></p>
+</header>
+
+<section class="carte">
+    <h2 id="petanque">🎯 Résultats de pétanque</h2>
+    <a id="club"
+       href="https://www.petanque-generation.fr/licencies/resultats/concours/officiel"
+       target="_blank">
+        Voir les résultats de ton club
+    </a>
+</section>
+
+<main>
+
+<section>
+    <h2 id="apropos">À propos de moi</h2>
+    <p id="description">J'aime manger, dormir et jouer à la PlayStation.</p>
+
+    <h3 id="lyceeTitre">Mon lycée</h3>
+    <p id="lycee">Lycée de l'Escaut, Valenciennes</p>
+</section>
+
+<section>
+    <h2 id="stageTitre">Mon stage</h2>
+    <p id="stage">Epitech, Lille</p>
+    <p><a id="lienStage" href="https://www.epitech.eu/" target="_blank">← Lieu de stage</a></p>
+</section>
+
+<section>
+    <p>
+        <a id="wikipedia"
+           href="https://fr.wikipedia.org/wiki/Lycée_de_l'Escaut"
+           target="_blank">
+            📚 Voir Wikipedia
+        </a>
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p id="footer">© 2026 - Liam | Fait avec passion.</p>
+</footer>
+
+<script>
+const traductions = {
+
+fr: {
+    titre: "Bienvenue sur le site de Liam !",
+    retour: "← Retour à l'accueil",
+    petanque: "🎯 Résultats de pétanque",
+    club: "Voir les résultats de ton club",
+    apropos: "À propos de moi",
+    description: "J'aime manger, dormir et jouer à la PlayStation.",
+    lyceeTitre: "Mon lycée",
+    lycee: "Lycée de l'Escaut, Valenciennes",
+    stageTitre: "Mon stage",
+    stage: "Epitech, Lille",
+    lienStage: "← Lieu de stage",
+    wikipedia: "📚 ma passion",
+    footer: "© 2026 - Liam | Fait avec passion."
+},
+
+lb: {
+    titre: "أهلاً بموقع ليام!",
+    retour: "← رجوع",
+    petanque: "🎯 نتائج البوتانك",
+    club: "شوف نتائج النادي",
+    apropos: "عني",
+    description: "بحب الأكل والنوم ولعب البلايستيشن.",
+    lyceeTitre: "مدرستي",
+    lycee: "ليسيه دي لاسكوت",
+    stageTitre: "تدريبي",
+    stage: "إيبيتيك، ليل",
+    lienStage: "← مكان التدريب",
+    wikipedia: "📚 ويكيبيديا",
+    footer: "© 2026 - ليام | معمول بحب."
+},
+
+la: {
+    titre: "Salve in situ Liam!",
+    retour: "← Redire ad initium",
+    petanque: "🎯 Petanca eventus",
+    club: "Eventus clava vide",
+    apropos: "De me",
+    description: "Amo manducare, dormire et ludere.",
+    lyceeTitre: "Schola mea",
+    lycee: "Lycée de l'Escaut",
+    stageTitre: "Internatus",
+    stage: "Epitech, Lilium",
+    lienStage: "← Locus internship",
+    wikipedia: "📚 Wikipedia",
+    footer: "© 2026 - Liam | Factum cum amore."
+},
+
+ln: {
+    titre: "Boyei malamu na site ya Liam!",
+    retour: "← Kozonga",
+    petanque: "🎯 Résultats ya pétanque",
+    club: "Tala résultat ya club na yo",
+    apropos: "Na nga",
+    description: "Nalingaka kolya, kolala mpe kosakana.",
+    lyceeTitre: "École na nga",
+    lycee: "Lycée de l'Escaut",
+    stageTitre: "Stage na nga",
+    stage: "Epitech, Lille",
+    lienStage: "← Esika ya stage",
+    wikipedia: "📚 Wikipedia",
+    footer: "© 2026 - Liam | Esalemi na bolingo."
+},
+
+ko: {
+    titre: "리암의 사이트에 오신 것을 환영합니다!",
+    retour: "← 홈으로",
+    petanque: "🎯 페탕크 결과",
+    club: "클럽 결과 보기",
+    apropos: "소개",
+    description: "나는 먹고 자고 게임하는 것을 좋아한다.",
+    lyceeTitre: "내 학교",
+    lycee: "Lycée de l'Escaut",
+    stageTitre: "인턴십",
+    stage: "Epitech, Lille",
+    lienStage: "← 인턴 장소",
+    wikipedia: "📚 위키백과",
+    footer: "© 2026 - Liam | 사랑으로 만들었습니다."
+}
+
+};
+
+const liens = {
+    fr: "https://fr.wikipedia.org/wiki/Rat-taupe_nu",
+    lb: "https://ar.wikipedia.org/wiki/نابليون_بونابرت",
+    la: "https://la.wikipedia.org/wiki/Neonympha_mitchellii",
+    ln: "https://ln.wikipedia.org/wiki/Cristiano_Ronaldo",
+    ko: "https://ko.wikipedia.org/wiki/BTS_WORLD_TOUR_ARIRANG"
+};
+
+function changerLangue(langue) {
+    localStorage.setItem("langue", langue);
+    appliquerLangue(langue);
+}
+
+function appliquerLangue(langue) {
+    const data = traductions[langue];
+
+    for (let id in data) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = data[id];
+    }
+
+    document.documentElement.lang = langue;
+
+    document.querySelectorAll("button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    const activeBtn = document.getElementById("btn-" + langue);
+    if (activeBtn) activeBtn.classList.add("active");
+
+    document.getElementById("wikipedia").href = liens[langue];
+}
+
+window.onload = () => {
+    const savedLang = localStorage.getItem("langue") || "fr";
+    appliquerLangue(savedLang);
+};
+</script>
+
 </body>
 </html>
