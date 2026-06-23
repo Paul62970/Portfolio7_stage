@@ -10,7 +10,7 @@ body {
 
 }
 header {
-    background: #e6dfca;
+    background: hwb(37 72% 17%);
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
@@ -217,6 +217,22 @@ html {
     margin: 10px;
 
     transition: 0.3s;
+}
+.sous_titres {
+    background-color: hwb(55 93% 3%);
+
+    color: black;
+
+    width: 40%;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+    transition: 0.5s;
 }
 /*--------------------------------------Fin seulemnt pour pierre2.html -----------------------------------------------------------*/
 
