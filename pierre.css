@@ -200,7 +200,7 @@ html {
     margin: auto;
 }
 
-/*--------------------------------------seulemnt pour pierre2.html -----------------------------------------------------------*/
+/*--------------------------------------Seulemnt pour pierre2.html/pierre3.html -----------------------------------------------------------*/
 .withimage {
     display: inline-block;
 
@@ -218,12 +218,12 @@ html {
 
     transition: 0.3s;
 }
-.sous_titres {
+.sous_titres_les_conférences {
     background-color: hwb(55 93% 3%);
 
     color: black;
 
-    width: 40%;
+    width: 16%;
 
     margin: 20px auto;
     padding: 20px;
@@ -234,7 +234,7 @@ html {
 
     transition: 0.5s;
 }
-/*--------------------------------------Fin seulemnt pour pierre2.html -----------------------------------------------------------*/
+/*--------------------------------------Fin seulemnt pour pierre2.html/pierre3.html -----------------------------------------------------------*/
 
 
 /* --------------------------------------------Mon mode sombre------------------------------------------------------------*/
