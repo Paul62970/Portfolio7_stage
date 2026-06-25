@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Première semaine -</title>
     <link rel="stylesheet" href="pierre.css">
-
+    <script src="pierre.js" defer></script>
 </head>
 <body id="top">
 
@@ -29,65 +29,106 @@
     <main>
         <!------ Menu -------->
         <section>
-
-            <h1>Menu</h1>
-            <h2>La première semaines</h2>
-            <a href="#les_conférences" class="bouton">Les conférences</a><br>
-            <a href="#la_pratique" class="bouton">La pratique</a>
-                
+            <div class="">
+                <h1>Menu</h1>
+                <h2>A propos de ce portfolio</h2>
+                <a href="#première_s" class="site"><h2>La première semaines de stage</h2></a>
+                <a href="#les_conférences" class="bouton">Les conférences</a><br>
+                <a href="#Les_ateliers" class="bouton">Les ateliers</a>
+                <a href="#seconde_s" class="site"><h2>La seconde semaines de stage</h2></a>
+                <a href="#les_conférences_2" class="bouton">Les conférences</a><br>
+                <a href="#Les_ateliers_2" class="bouton">Les ateliers</a>
+           </div>     
         </section>
-
+        <section>
+            
+            <h1>A propos du portfolio</h1>
+                <div class="groupe">
+                    <p class="paragraphe">Au cours du stage nous avons dû réaliser un portfolio (site internet en html/css/JavaScript) pour nous présenter et présenter notre stage à EPITECH</p>
+                </div>
+        </section>
 
         <!------ Semaine 1 -------->
         <section>
-            <h1>La première semaine</h1>
+            <h1 id="première_s">La première semaine de stage</h1>
+            <div class="groupe">
+                <div class="titres" >
+                    
+                    
         
-            <h2>L'emploi du temps de la 1ère semaine de stage</h2>
+                    <h2>L'emploi du temps de la 1ère semaine de stage</h2>
 
-            <img src="pierre1.jpg" width="700" lenght="400">
-
+                </div>
+                <img src="pierre1.jpg" width="700" lenght="400">
                 
         
-            <div id="les_activités" class="bloc">
-                <div class="groupe">
-                    <h3 class="sous_titres_les_conférences" id="les_conférences">Les conférences</h3>
+                <div id="les_activités" class="bloc">
+                    <div class="">
+                        <h3 class="sous_titres" id="les_conférences">Les conférences</h3>
                 
-                    <p class="paragraphe">Nous avons assisté à 3 conférences lors de cette première semaine de stage à EPITECH sur: <br>
-                        <strong>La cybersécurité</strong><br>
-                        <strong>Les transformations dûes à l'IA</strong><br>
-                        <strong>Apprendre à apprendre</strong><br>
-                    </p>
-                    <h3 class="sous_titres_les_conférences" id="la_pratique">La pratique</h3>
-                    <h4>Nous avons réalisé au cours de cette première semaine différents ateliers: </h4>
+                        <p class="paragraphe">Nous avons assisté à plusieurs conférences lors de cette première semaine de stage à EPITECH : <br><br>
+                            <strong>La cybersécurité</strong><br><br>
+                            <strong>Les transformations dûes à l'IA</strong><br><br>
+                            <strong>Apprendre à apprendre</strong><br><br>
+                            <strong>L'IA</strong><br><br>
+                        </p>
+                        <h3 class="sous_titres" id="Les_ateliers">Les ateliers</h3>
+                        <h4>Nous avons réalisé au cours de cette première semaine différents ateliers: </h4>
 
                 
-                    <p class="paragraphe"><strong>L'atelier OSINT ou Open Source INTelligence</strong><br><br>Dans cet atelier nous avons dû résoudre les énigmes qui nous étais proposé.<br>La réponse était toujours sous le format ctf{réponse}.<br><br><img src="pierre4.png" width="700" lenght="400"><br></p><br>
-                    <p class="paragraphe"><strong>L'atelier <a href="https://leekwars.com/" class="site">Leek Wars</a></strong><br><br>Dans cet atelier nous avons dû Développer notre propre intelligence artificielle grâce au language LeekScript <br> (le language utiliser pour créer les IA dans le jeu).<br><br><br><img src="pierre6.png" width="700" lenght="400"><br></p><br>
-                    <p class="paragraphe"><strong>L'atelier <a href="https://leekwars.com/" class="site">Leek Wars</a></strong><br><br>Dans cet atelier nous avons dû Développer notre propre intelligence artificielle grâce au language LeekScript (le language utiliser pour créer les IA dans le jeu).<br><br><br><img src="pierre6.png" width="700" lenght="400"><br></p><br>
-                
+                        <p class="paragraphe"><strong>L'atelier OSINT ou Open Source INTelligence</strong><br><br>Dans cet atelier nous avons dû résoudre les énigmes qui nous étais proposé.<br>La réponse était toujours sous le format ctf{réponse}.<br><br><img src="pierre4.png" width="700" lenght="400"><br></p><br>
+                        <p class="paragraphe"><strong>L'atelier <a href="https://leekwars.com/" class="site">Leek Wars</a></strong><br><br>Dans cet atelier nous avons dû développer notre propre intelligence artificielle grâce au language LeekScript<br>(le language utiliser pour créer les IA dans le jeu) pour détruire notre adversaire.<br><br><br><img src="pierre6.png" width="700" lenght="400"><br></p><br>
+                        <p class="paragraphe"><strong>L'atelier recodage du code césar</strong><br><br>Dans cet atelier nous avons dû développer un code pour déchiffrer un message crypté par le code césar. <br> <br>Mais qu'est-ce que le code césar ?<br> <br> C'est une méthode de chiffrement par décallage, le texte chiffré s'obtient donc en remplaçant chaque lettre du texte clair original par une lettre à distance fixe, toujours du même côté, dans l'ordre de l'alphabet. <br>Pour les dernières lettres (dans le cas d'un décalage à droite), on reprend au début.<br><br><img src="Pierre7.png" width="500" lenght="250"><br><img src="Pierre8.png"><br></p><br>
+                        <p class="paragraphe"><strong>L'atelier des canards</strong><br><br>Dans cet atelier nous avons dû faire le plus de canard possible avec un pack de lego spécial. <br><br>Dans un premier temps nous devions dessiner les canards sur une feuille avant de les réaliser pluis dans un deuxième les dessiner après les avoir réalisé<br><br>Nous nous sommes aperçu que les dessiner après les avoir réalisés était plus simple que les dessiner avant.<br><br>Cette expérience traduit la pédagogie chez EPITECH<img src="" width="700" lenght="400"><br></p><br>
+                        <p class="paragraphe"><strong>L'atelier arduino</a></strong><br><br>Dans cet atelier nous avons dû reproduire le jeu simon grâce à une carte arduino.<br> <br>Le jeu Simon est un jeu où il faut retenir une combinaison de couleurs qui grandit manche après manche.<br> On commence par retenir une couleur, puis deux, puis trois… jusqu’à ce que l’on se trompe ou que l’on prenne trop de temps pour appuyer sur l’un des boutons.<br><br>Nous avons donc réalisé les branchement et le code nécessaire pour arriver à reproduire ce jeu. <br><br><img src="pierre9.png" class="droite" width="400" lenght="400"><img src="pierre10.png" class="gauche" width="400" lenght="400"><br></p><br>
+
+                    </div>
                 </div>
             </div>
-
         </section>
+        <!------ Semaine 2 -------->
+        <section>
+            <h1 id="seconde_s">La seconde semaine de stage</h1>
+            <div class="groupe">
+                <div class="titres" >
+                    
+                    
+        
+                    <h2>L'emploi du temps de la 2e semaine de stage</h2>
 
+                </div>
+                <img src="pierre5.jpg" width="700" lenght="400">
+                
+        
+                <div id="les_activités" class="bloc">
+                    <div class="">
+                        <h3 class="sous_titres" id="les_conférences_2">Les conférences</h3>
+                
+                        <p class="paragraphe">Nous avons assisté à plusieurs conférences lors de cette seconde semaine de stage à EPITECH : <br><br>
+                            <strong>Des témoignages des étudiants avec des démots sur leurs projets</strong><br><br>
+                            <strong>Les ESN (entreprises de services numériques) avec l'entreprise KPF-SI</strong><br><br>
+                            <strong>L'IA et google</strong><br><br>
+                            <strong>Les métiers des jeux-vidéos</strong><br><br>
+                            <strong>Les métiers de la cybersécurité avec l'entreprise Stormshield</strong><br><br>
+                            <strong>L'orientation et les métiers de l'informatique</strong><br><br>
+                        </p>
+                        <h3 class="sous_titres" id="Les_ateliers_2">Les ateliers</h3>
+                        <h4>Nous avons réalisé au cours de cette seconde semaine différents ateliers: </h4>
 
+                
+                        <p class="paragraphe"><strong>L'atelier Nasa</strong><br><br>Dans cet atelier nous étions à la place d'astronaute qui doivent rejoindre le QG sur la lune alors qu'ils se sont crachés à 300Km de celui-ci et que seulemnt 15 objets ne sont pas endomagés. Nous devions les classer du plus important au moins important<br><br></p><br>
+                        <p class="paragraphe"><strong>L'atelier morpion IA</strong><br><br>Dans cet atelier nous avons dû finaliser un code déjà existant pour pouvoir jouer au morpion avec une IA.</p><br>
+                        <p class="paragraphe"><strong>L'atelier snake Java Script</strong><br><br>Dans cet atelier nous avons dû reproduire le jeu snake en Java Script.<br><br><img class="droite" src="Pierre11.png" width="300" lenght="250"><img class="gauche" src="Pierre12.png"><br></p><br>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 - Pierre Boussemart | Tous droits réservés</p>
     </footer>
-
-    <script src="script.js"></script>
-
-    <script>
-
-        function changerTheme() {
-
-            document.body.classList.toggle("dark-mode");
-
-        }
-
-    </script>
 
 </body>
 

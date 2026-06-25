@@ -6,14 +6,14 @@ body {
     font-size: 20px;
     margin: 0;
     transition: 0.5s;
-    
 
 }
+
 header {
     background: hwb(37 72% 17%);
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 /*change la couleur des mots "sites" en noir*/ 
@@ -87,11 +87,19 @@ h3 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 15px;
-    background: #333;
-    color: white;
+    padding: 10px 10px;
     background-color: hsl(34, 15%, 68%);
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-top:hover {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 15px;
+    background-color: hsl(34, 15%, 68%);
+    border-radius: 10px;
+    transition: 0.3s ;
 }
 html {
     scroll-behavior: smooth;
@@ -126,6 +134,7 @@ html {
     background-color: #ddd;
 
     transform: scale(1.05);
+    
 }
 
 .bouton {
@@ -171,54 +180,13 @@ html {
     transform: scale(1.05);
 
     color: white;
-}
-
-.image {
-    width: 300px;
-
-    border-radius: 10px;
-}
-
-/* Image à gauche */
-.gauche {
-    float: left;
-
-    margin-left: 20px;
-}
-
-/* Image à droite */
-.droite {
-    float: right;
-
-    margin-right: 200px;
-}
-
-/* Image centrée */
-.centre {
-    display: block;
-
-    margin: auto;
-}
-
-/*--------------------------------------Seulemnt pour pierre2.html/pierre3.html -----------------------------------------------------------*/
-.withimage {
-    display: inline-block;
-
-    background-color: hsl(53, 26%, 69%);
-
-    color: #333;
-
-    text-decoration: none;
-
-    padding: 12px 20px;
-
-    border-radius: 10px;
-
-    margin: 10px;
-
     transition: 0.3s;
 }
-.sous_titres_les_conférences {
+
+
+/*--------------------------------------Seulemnt pour pierre2.html/pierre3.html -----------------------------------------------------------*/
+
+.sous_titres {
     background-color: hwb(55 93% 3%);
 
     color: black;
@@ -233,6 +201,32 @@ html {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 
     transition: 0.5s;
+}
+.titres {
+    background-color: hwb(55 93% 3%);
+
+    color: black;
+
+    width: 50%;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+    transition: 0.5s;
+}
+.droite {
+    position: relative;
+    right: 20px;
+   
+}
+.gauche {
+    position: relative;
+    left: 20px;
+    
 }
 /*--------------------------------------Fin seulemnt pour pierre2.html/pierre3.html -----------------------------------------------------------*/
 
@@ -250,7 +244,7 @@ html {
         background: #0d0533;
         padding: 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: 0.3s;
+        transition: 0.5s;
     }
     
     .paragraphe {
@@ -265,6 +259,7 @@ html {
         border-radius: 15px;
 
         box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        transition: 0.5s;
     }
     
     
@@ -283,6 +278,7 @@ html {
         border-radius: 15px;
 
         box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        transition: 0.5s;
     }
     /* cela change la couleur des bouton class="bouton" pour la mettre en mode sombre*/
     .bouton {
@@ -313,37 +309,61 @@ html {
         background-color: oklch(12.641% 0.02173 276.427);
 
         transform: scale(1.05);
-
+        transition: 0.3s;
         color: white;
     }
     .btn-top {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        padding: 10px 15px;
-        background: black ;
-        color: white;
+        padding: 10px 10px;
         background-color: hwb(239 73% 6%);
-        border-radius: 5px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .btn-top:hover {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 15px;
+        background-color: hwb(239 73% 6%);
+        border-radius: 10px;
+        transition: 0.3s;
     }
 
     /*--------------------------------------seulemnt pour pierre2.html -----------------------------------------------------------*/
-    .withimage {
-        display: inline-block;
 
+    .sous_titres {
         background-color: hwb(239 73% 6%);
 
-        color: #333;
+        color: black;
 
-        text-decoration: none;
+        width: 16%;
 
-        padding: 12px 20px;
+        margin: 20px auto;
+        padding: 20px;
 
-        border-radius: 10px;
+        border-radius: 15px;
 
-        margin: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 
-        transition: 0.3s;
+        transition: 0.5s;
+    }
+    .titres {
+        background-color: hwb(239 73% 6%);
+
+        color: black;
+
+        width: 50%;
+
+        margin: 20px auto;
+        padding: 20px;
+
+        border-radius: 15px;
+
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+        transition: 0.5s;
     }
 
     /*--------------------------------------Fin seulemnt pour pierre2.html -----------------------------------------------------------*/
