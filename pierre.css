@@ -18,9 +18,10 @@ header {
 
 /*change la couleur des mots "sites" en noir*/ 
 .site {
-    color: rgb(0, 0, 0);
+    color: black;
 
 }
+
 
 
 /* Définit la taille de l'écriture dans les titres et les paragraphes*/
@@ -185,7 +186,10 @@ html {
 
 
 /*--------------------------------------Seulemnt pour pierre2.html/pierre3.html -----------------------------------------------------------*/
-
+.semaine {
+    color: black;
+    transition: 0.5s;
+}
 .sous_titres {
     background-color: hwb(55 93% 3%);
 
@@ -332,7 +336,10 @@ html {
     }
 
     /*--------------------------------------seulemnt pour pierre2.html -----------------------------------------------------------*/
-
+    .semaine {
+        color: white;
+        transition: 0.5s;
+    }
     .sous_titres {
         background-color: hwb(239 73% 6%);
 
