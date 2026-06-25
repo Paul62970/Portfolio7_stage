@@ -8,58 +8,64 @@
 
 </head>
 <body id="top">
+
+    <!------ éléments figés sur la page ----------------------------------------------------------------------------------------------------------------------------------------------------------->
     <a href="#top"><img src="pierre2.png" class="btn-top" width="30" length="10"></a>
+    <div> 
+        <button class="btn_mode_sombre" onclick="changerTheme()"> 
+            🌙 Mode sombre / clair
+
+        </button>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
     <header>
         
-        <h1> Première semaine de stage à EPITECH
-            
-            <div> 
-                <button class="btn_mode_sombre" onclick="changerTheme()"> 
-                    🌙 Mode sombre / clair
-
-                </button>
-            </div>
-                
-        </h1>
+        <h1> Présentation des semaines de stage à EPITECH</h1>
         <a href="pierre.html" class="bouton">Retour à ma présentation</a>
-        
-            
+
     </header>
 
     <main>
         <!------ Menu -------->
         <section>
 
-            <h1>Menu</h1>    
-            <a href="#les_activités" class="bouton">Les activités</a>
-                
+            <h1>Menu</h1>
+            <h2>La première semaines</h2>
+            <a href="#les_conférences" class="bouton">Les conférences</a><br>
+            <a href="#la_pratique" class="bouton">La pratique</a>
                 
         </section>
 
+
+        <!------ Semaine 1 -------->
         <section>
-            <h1>L'emploi du temps de la 1ère semaine de stage</h1>
-
-            <div class="">
-
-                
-                
-                <img src="pierre1.jpg" width="700" lenght="400">
-
-            </div>
-
-        </section>
+            <h1>La première semaine</h1>
         
-        <section id="les_activités" class="bloc">
-            <h1>Les activités</h1>
-            <div class="groupe">
-                <h3 class="sous_titres_les_conférences">Les conférences</h3>
+            <h2>L'emploi du temps de la 1ère semaine de stage</h2>
+
+            <img src="pierre1.jpg" width="700" lenght="400">
+
                 
-                <p class="paragraphe">Nous avons assisté à plusieurs conférence lors de cette première semaine de stage à EPITECH comme par exemple sur: <br>
-                     <strong>La cybersécurité</strong><br>
-                    
-                    
-                </p>
+        
+            <div id="les_activités" class="bloc">
+                <div class="groupe">
+                    <h3 class="sous_titres_les_conférences" id="les_conférences">Les conférences</h3>
                 
+                    <p class="paragraphe">Nous avons assisté à 3 conférences lors de cette première semaine de stage à EPITECH sur: <br>
+                        <strong>La cybersécurité</strong><br>
+                        <strong>Les transformations dûes à l'IA</strong><br>
+                        <strong>Apprendre à apprendre</strong><br>
+                    </p>
+                    <h3 class="sous_titres_les_conférences" id="la_pratique">La pratique</h3>
+                    <h4>Nous avons réalisé au cours de cette première semaine différents ateliers: </h4>
+
+                
+                    <p class="paragraphe"><strong>L'atelier OSINT ou Open Source INTelligence</strong><br><br>Dans cet atelier nous avons dû résoudre les énigmes qui nous étais proposé.<br>La réponse était toujours sous le format ctf{réponse}.<br><br><img src="pierre4.png" width="700" lenght="400"><br></p><br>
+                    <p class="paragraphe"><strong>L'atelier <a href="https://leekwars.com/" class="site">Leek Wars</a></strong><br><br>Dans cet atelier nous avons dû Développer notre propre intelligence artificielle grâce au language LeekScript <br> (le language utiliser pour créer les IA dans le jeu).<br><br><br><img src="pierre6.png" width="700" lenght="400"><br></p><br>
+                    <p class="paragraphe"><strong>L'atelier <a href="https://leekwars.com/" class="site">Leek Wars</a></strong><br><br>Dans cet atelier nous avons dû Développer notre propre intelligence artificielle grâce au language LeekScript (le language utiliser pour créer les IA dans le jeu).<br><br><br><img src="pierre6.png" width="700" lenght="400"><br></p><br>
+                
+                </div>
             </div>
 
         </section>
